@@ -1,0 +1,16 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+    -fx-font-size: 16px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #A8FFFC;
+}
+.Background{
+	-fx-background-color : #A8FFFC;
+}
+.ArchorPane{
+	-fx-background-color: #ABBC99;
+}
+.button{
+	 -fx-background-radius: 15;
+	 -fx-background-color: #23474B;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="7.0" layoutY="53.0" prefHeight="376.0" prefWidth="583.0" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="53.0">
+        <columns>
+          <TableColumn prefWidth="103.0" text="Mã tác giả" />
+          <TableColumn prefWidth="148.0" text="Họ và tên" />
+            <TableColumn prefWidth="115.0" text="Ngày sinh" />
+            <TableColumn prefWidth="115.0" text="Quốc tịch" />
+            <TableColumn prefWidth="115.0" text="Ghi chú" />
+        </columns>
+      </TableView>
+      <Label layoutX="256.0" layoutY="14.0" text="Danh sách tác giả">
+         <font>
+            <Font name="UTM Androgyne" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="338.0" layoutY="442.0" mnemonicParsing="false" text="Thêm tác giả">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="36.0" layoutY="452.0" text="Copyright 2018 | SonBK" />
+      <Button layoutX="471.0" layoutY="442.0" mnemonicParsing="false" text="Xóa">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

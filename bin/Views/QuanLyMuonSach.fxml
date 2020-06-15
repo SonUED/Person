@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" styleClass="Background" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.QuanLyMuonSachControllers">
+   <children>
+      <Label layoutX="108.0" layoutY="32.0" prefHeight="40.0" prefWidth="197.0" text="Trình quản lí thư viện" textAlignment="CENTER">
+         <font>
+            <Font name="UTM Androgyne" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btDanhsach" layoutX="123.0" layoutY="111.0" mnemonicParsing="false" onAction="#Danhsach" stylesheets="@../application/application.css" text="Danh sách người đọc" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btLichsu" layoutX="130.0" layoutY="175.0" mnemonicParsing="false" onAction="#Lichsu" stylesheets="@../application/application.css" text="Lịch sử mượn sách" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btTacgia" layoutX="135.0" layoutY="250.0" mnemonicParsing="false" onAction="#Tacgia" stylesheets="@../application/application.css" text="Sách theo tác giả" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="122.0" layoutY="458.0" text="Copyright 2018 by">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btTheloai" layoutX="133.0" layoutY="326.0" mnemonicParsing="false" onAction="#Theloai" stylesheets="@../application/application.css" text="Sách theo thể loại" textAlignment="CENTER" textFill="#f5f5f5">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="236.0" layoutY="442.0" text="Son">
+         <font>
+            <Font name="FS Just Awesome Script" size="49.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DanhSachTheLoaiController">
+   <children>
+      <TableView fx:id="ListTableTL" layoutX="14.0" layoutY="59.0" prefHeight="370.0" prefWidth="575.0" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="59.0">
+        <columns>
+          <TableColumn fx:id="MaTLColumn" prefWidth="200.0" text="Mã thể loại" />
+          <TableColumn fx:id="TenColumn" prefWidth="200.0" text="Tên" />
+            <TableColumn fx:id="GhichuColumn" prefWidth="200.0" text="Ghi chú" />
+        </columns>
+      </TableView>
+      <Label layoutX="217.0" layoutY="15.0" text="Danh sách thể loại">
+         <font>
+            <Font name="UTM Androgyne" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="449.0" text="Copyright 2018 | SơnBK" />
+      <Button fx:id="btThemtl" layoutX="327.0" layoutY="448.0" mnemonicParsing="false" onAction="#TaoTheLoai" text="Thêm thể loại">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btXoaTL" layoutX="481.0" layoutY="448.0" mnemonicParsing="false" onAction="#handleDeletePerson" text="Xóa">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

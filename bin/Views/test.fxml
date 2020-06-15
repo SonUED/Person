@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" styleClass="Background" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DanhSachNguoiDocController">
+   <children>
+      <TabPane prefHeight="800.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="500.0">
+                     <children>
+                        <TableView fx:id="ListTable" layoutX="17.0" layoutY="102.0" prefHeight="498.0" prefWidth="973.0" styleClass="Background" stylesheets="@../application/application.css" AnchorPane.bottomAnchor="171.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="102.0">
+                          <columns>
+                            <TableColumn fx:id="MaDGColumn" prefWidth="100.0" text="Mã đọc giả" />
+                            <TableColumn fx:id="HotenColumn" prefWidth="100.0" text="Họ tên" />
+                              <TableColumn fx:id="NgaysinhColumn" prefWidth="100.0" text="Ngày sinh" />
+                              <TableColumn fx:id="NgayDKColumn" prefWidth="110.0" text="Ngày đăng kí" />
+                              <TableColumn fx:id="NgayGHColumn" prefWidth="131.0" text="Ngày gia hạn" />
+                              <TableColumn fx:id="GhichuColumn" prefWidth="137.0" text="Ghi chú" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="417.0" layoutY="35.0" text="Danh sách đọc giả">
+                           <font>
+                              <Font name="UTM Androgyne" size="20.0" />
+                           </font>
+                        </Label>
+                        <SplitMenuButton layoutX="64.0" layoutY="35.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="141.0" text="Caterogy">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#Action1" text="Danh sách thể loại" />
+                            <MenuItem mnemonicParsing="false" onAction="#Action2" text="Danh sách tác giả" />
+                          </items>
+                        </SplitMenuButton>
+                        <Button fx:id="btTaoDocGia" layoutX="635.0" layoutY="671.0" mnemonicParsing="false" onAction="#TaoDocGia" text="Thêm" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btXoa" layoutX="803.0" layoutY="672.0" mnemonicParsing="false" onAction="#handleDeletePerson" text="Xóa" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btUpdate" layoutX="719.0" layoutY="672.0" mnemonicParsing="false" onAction="#Update" text="Sửa" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="95.0" layoutY="681.0" text="Copyright 2018 by" />
+                        <Label layoutX="184.0" layoutY="663.0" text="Son">
+                           <font>
+                              <Font name="FS Just Awesome Script" size="49.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

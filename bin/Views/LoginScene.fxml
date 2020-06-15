@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" styleClass="Background" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginSceneController">
+   <children>
+      <Label layoutX="58.0" layoutY="29.0" text="Chào mừng bạn đến hệ thống">
+         <font>
+            <Font name="UTM Futura Extra" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="57.0" text="Quản Lý Thư Viện">
+         <font>
+            <Font name="UTM Futura Extra" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" layoutX="142.0" layoutY="174.0" prefHeight="35.0" prefWidth="200.0" />
+      <PasswordField fx:id="txtPassword" layoutX="142.0" layoutY="238.0" prefHeight="35.0" prefWidth="200.0" />
+      <Label layoutX="42.0" layoutY="176.0" text="Tài khoản :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="241.0" text="Mật khẩu :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="433.0" text="Copyright 2018 by" />
+      <Label layoutX="242.0" layoutY="414.0" text="Son">
+         <font>
+            <Font name="FS Just Awesome Script" size="49.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLogIn" layoutX="162.0" layoutY="310.0" mnemonicParsing="false" onAction="#LogIn" text="Đăng nhập" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
